@@ -1,4 +1,5 @@
 // components/CountrySelector.tsx
+"use client";
 
 import { ReactCountryFlag } from "react-country-flag";
 import {

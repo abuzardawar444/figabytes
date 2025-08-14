@@ -66,7 +66,7 @@ const Navbar = ({ scroll = false }: NavbarProps) => {
             />
           </div>
         </nav>
-        <nav className="md:hidden w-full shadow-sm fixed bottom-0 left-0 z-50 border-t">
+        <nav className="md:hidden w-full shadow-sm fixed bottom-0 left-0 z-50 border-t bg-white">
           <div className="flex justify-around items-center h-16">
             <MobileNavLinks pathname={pathname} />
           </div>
