@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Auth = () => {
   return (
-    <div>
+    <div className="md:flex hidden">
       <Link href="/sign-in" className="text-xl">
         Log In/Register
       </Link>
