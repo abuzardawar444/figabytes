@@ -23,10 +23,10 @@ export function PlanTabs({ unlimitedPlans, regularPlans }: PlanTabsProps) {
         <TabsTrigger value="regular">Regular</TabsTrigger>
       </TabsList>
 
-      <TabsContent value="unlimited">
+      <TabsContent value="unlimited" className="">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {unlimitedPlans.map((plan, i) => (
-            <PlanCard key={i} plan={plan} variant="primary" />
+            <PlanCard key={i} plan={plan} />
           ))}
         </div>
       </TabsContent>

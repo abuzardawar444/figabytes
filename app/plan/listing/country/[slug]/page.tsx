@@ -74,10 +74,6 @@ export default async function CountryPlansTabs({
       <h1 className="text-3xl font-bold mb-8 text-center">{countryName}</h1>
 
       <PlanTabs unlimitedPlans={unlimitedPlans} regularPlans={regularPlans} />
-
-      <div className="mt-8 text-center text-sm text-muted-foreground">
-        <p>All prices include VAT. Plans auto-renew unless cancelled.</p>
-      </div>
     </div>
   );
 }

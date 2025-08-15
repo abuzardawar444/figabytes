@@ -18,7 +18,6 @@ interface PlanCardProps {
     validity: string;
     price: string;
   };
-  variant?: "primary" | "secondary";
 }
 
 export function PlanCard({ plan }: PlanCardProps) {

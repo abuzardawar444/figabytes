@@ -8,3 +8,5 @@ export const popularCountries: Country[] = [
   { name: "Omani Riyals", code: "OM" },
   { name: "Bahraini Dinars", code: "BH" },
 ];
+
+export const currencies = ["USD", "EUR", "GBP", "QAR", "SAR", "AED"];
