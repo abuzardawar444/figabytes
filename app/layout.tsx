@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/navbar/navbar";
 import Container from "@/components/global/container";
+import ClientProvider from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +32,10 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <Navbar />
-          <Container>{children}</Container>
+          <ClientProvider>
+            <Navbar />
+            <Container>{children}</Container>
+          </ClientProvider>
         </body>
       </html>
     </ClerkProvider>

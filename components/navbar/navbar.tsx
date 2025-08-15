@@ -16,7 +16,7 @@ type NavbarProps = {
   large?: boolean;
 };
 
-const Navbar = ({ scroll = false }: NavbarProps) => {
+const Navbar = ({ scroll = true }: NavbarProps) => {
   const scrolled = useScroll(50);
   const [selectedLang, setSelectedLang] = useState("EN");
   const [selectedCountry, setSelectedCountry] = useState({
@@ -28,7 +28,7 @@ const Navbar = ({ scroll = false }: NavbarProps) => {
     <header
       className={`sticky top-0 z-40 w-full transition-all ${
         scroll && scrolled
-          ? "backdrop-blur-xl border-b-2 border-b-secondary bg-background/30"
+          ? "backdrop-blur-xl opacity-75 border-b-2 border-b-secondary bg-background/30"
           : "bg-transparent"
       }`}
     >

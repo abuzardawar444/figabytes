@@ -1,6 +1,10 @@
+import HeroSearch from "@/components/hero/hero-search";
+
 const HomePage = () => {
   return (
-    <div className="h-screen flex justify-center items-center">HomePage</div>
+    <div>
+      <HeroSearch />
+    </div>
   );
 };
 export default HomePage;

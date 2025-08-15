@@ -9,15 +9,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-
-const gulfCountries = [
-  { name: "UAE Dirhams", code: "AE" },
-  { name: "Saudi Riyals", code: "SA" },
-  { name: "Kuwait Dinars", code: "KW" },
-  { name: "Qatar Riyals", code: "QA" },
-  { name: "Omani Riyals", code: "OM" },
-  { name: "Bahraini Dinars", code: "BH" },
-];
+import { ChevronDown } from "lucide-react";
+import { popularCountries } from "@/config/constant";
 
 export function CountrySelector({
   selectedCountry,
@@ -36,10 +29,11 @@ export function CountrySelector({
             style={{ width: "1.5em", height: "1.5em" }}
           />
           <span>{selectedCountry.name}</span>
+          <ChevronDown />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        {gulfCountries.map((country) => (
+      <DropdownMenuContent align="end" className="w-full">
+        {popularCountries.map((country) => (
           <DropdownMenuItem
             key={country.code}
             onClick={() => setSelectedCountry(country)}
