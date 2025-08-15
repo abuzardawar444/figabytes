@@ -29,7 +29,7 @@ export function PlanCard({ plan }: PlanCardProps) {
       <CardHeader>
         <CardTitle className="text-xl">{plan.title}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 flex flex-col gap-6">
         <PlanDetail
           icon={<Globe size={18} />}
           label="Coverage"
