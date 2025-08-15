@@ -1,5 +1,3 @@
-"use client";
-
 import { PlanTabs } from "@/components/plan/plan-tabs";
 import { notFound } from "next/navigation";
 import countries from "world-countries";
@@ -12,14 +10,15 @@ interface Plan {
   price: string;
 }
 
-export default function CountryPlansTabs({
+export default async function CountryPlansTabs({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
   // Find the country by slug
+  const { slug } = await params;
   const country = countries.find(
-    (c) => c.name.common.toLowerCase().replace(/\s+/g, "-") === params.slug
+    (c) => c.name.common.toLowerCase().replace(/\s+/g, "-") === slug
   );
 
   if (!country) {
