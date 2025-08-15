@@ -2,10 +2,17 @@
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { PlanCard } from "./plan-card";
+interface Plan {
+  title: string;
+  coverage: string;
+  data: string;
+  validity: string;
+  price: string;
+}
 
 interface PlanTabsProps {
-  unlimitedPlans: any[];
-  regularPlans: any[];
+  unlimitedPlans: Plan[];
+  regularPlans: Plan[];
 }
 
 export function PlanTabs({ unlimitedPlans, regularPlans }: PlanTabsProps) {
