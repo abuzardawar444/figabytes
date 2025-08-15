@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "placehold.co",
       },
+      {
+        protocol: "https",
+        hostname: "media-usim-live.s3.eu-west-1.amazonaws.com",
+      },
     ],
   },
 };

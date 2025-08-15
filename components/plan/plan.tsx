@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown, CalendarDays, Globe, Tag } from "lucide-react";
+import Container from "../global/container";
 
 interface Plan {
   title: string;
@@ -63,7 +64,7 @@ export default function CountryPlansTabs({ country }: { country: string }) {
   ];
 
   return (
-    <div className="container mx-auto py-8">
+    <Container className="my-10">
       <h1 className="text-3xl font-bold mb-6 text-center">
         Plans for {country}
       </h1>
@@ -162,6 +163,6 @@ export default function CountryPlansTabs({ country }: { country: string }) {
           </div>
         </TabsContent>
       </Tabs>
-    </div>
+    </Container>
   );
 }

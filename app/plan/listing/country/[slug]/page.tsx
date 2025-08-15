@@ -70,7 +70,7 @@ export default async function CountryPlansTabs({
   ];
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="">
       <h1 className="text-3xl font-bold mb-8 text-center">{countryName}</h1>
 
       <PlanTabs unlimitedPlans={unlimitedPlans} regularPlans={regularPlans} />

@@ -5,13 +5,15 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Search } from "lucide-react";
 import CountriesList from "@/components/hero/contries-list";
 import RegionsList from "@/components/hero/regions-list";
+import { config } from "@/config/config";
+// import { CarouselSpacing } from "./carousel";
 
 export default function HeroSearch() {
   return (
     <section className="w-full flex flex-col items-center text-center mt-12 px-4">
       {/* Heading */}
-      <h1 className="text-2xl md:text-3xl font-bold">
-        Save up to 10x with eSIMS from USim.
+      <h1 className="text-2xl md:text-3xl font-bold py-2">
+        Save up to 10x with eSIMS from {config.appName}.
       </h1>
       <p className="text-primary/80">
         Get data packs at affordable rates in 200+ countries & regions
@@ -28,6 +30,7 @@ export default function HeroSearch() {
       </div>
 
       {/* Tabs with content */}
+      {/* <CarouselSpacing /> */}
       <Tabs defaultValue="local" className="mt-6 w-full">
         <TabsList className="grid w-64 mx-auto grid-cols-2 mb-8">
           <TabsTrigger value="local">Local</TabsTrigger>

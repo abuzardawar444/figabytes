@@ -90,7 +90,7 @@ export default function CountriesList() {
           <Button
             variant="outline"
             onClick={toggleShowAll}
-            className="rounded-full px-20 bg-primary text-secondaryd"
+            className="rounded-full px-20 bg-primary text-secondary"
           >
             {showAll ? "Show Less Countries" : `Show All 200+ Countries`}
           </Button>
